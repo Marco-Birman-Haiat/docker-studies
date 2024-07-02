@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
 
 app.post('/store-goal', (req, res) => {
   const enteredGoal = req.body.goal;
-  console.log(enteredGoal);
+  console.log(enteredGoal);  // essa linha faz o goal ser logado no container
   userGoal = enteredGoal;
   res.redirect('/');
 });
